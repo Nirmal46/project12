@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmal Basyal</title>
+    <link rel="icon" href="im2.jpg">
+
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+        nav a:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    nav a span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -5;
+      border-bottom: 4px solid rgb(122, 35, 96);
+      border-radius: 4px;
+      transform: scale(0) translateY(50px);
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    nav a:hover span {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo"><div class="nirmal">
+            <img src="im1.JPG" alt="img" class="logo"></div></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home </a>
+            <a href="#about">About<span></span></a>
+            <a href="#services">Services<span></span></a>
+            <a href="#portfolio">Portfolio<span></span></a>
+            <a href="#contact">Contact<span></span></a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Nirmal</h1>
+            <p>
+                I'm a web developer who loves to create beautiful and functional websites
+                for people who want to make a difference in the world.
+            </p>
+            <p>Currently I'm a student. I can 
+            create beautiful and functional websites using HTML, CSS, JavaScript, and WordPress.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/nirmal.basyal.146/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/NirmalBasyal" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/nirmal__basyal/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/nirmalbasyal/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="#" target="_blank" class="btn">Hire!</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video-recording'></i>
+                    <h3>Videographer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my website! I'm Nepali,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </h3>
+            <p>
+                This website is my personal blog where I write about web development
+                topics that interest me and inspire me.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better. I hope you
+                enjoyed reading my blog posts and
+                found
+                them useful and informative. If you want to read more of my posts, subscribe
+                to my newsletter where I send
+                weekly
+                updates on web development trends and tips. If you have any feedback or
+                suggestions, please let me know. I'd love to hear from you.
+            </p>
+            <a href="#" class="btn" target="_blank">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Web development is my passion! Crafting digital experiences with HTML, CSS, and JavaScript is what I love. Join me on this journey of turning ideas into interactive online reality!
+                    </p>
+                <a href="#" class="btn" target="_blank">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Unlocking creativity through pixels and colors! Graphic design is my realm where visual concepts come to life. 
+                    From crafting logos to shaping visual identities, I leverage design tools to communicate messages effectively. 
+                   </p>
+                <a href="#" class="btn" target="_blank">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Navigating the digital landscape to elevate brands! I specialize in leveraging online platforms, 
+                    analytics, and strategic campaigns to boost visibility and engagement. 
+                    Join me in the exciting world of digital marketing where every click tells a story.</p>
+                <a href="#" class="btn" target="_blank">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="portfolio1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src=" /portfolio2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio3.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio4.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio5.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio6.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="IMG-058514d283caa232fd21908d80b3e24d-V.jpg" alt="">
+                        <h3>Nirmal</h3>
+                        <p>The projects done by Nirmal Basyal are always awesome. No one coul ever have a complain about it!</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="arush.jpg" alt="">
+                        <h3>Riyaan</h3>
+                        <p>He's the best web dev I've ever known. His excellence made my works so much easier.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="nirusha.jpg" alt="">
+                        <h3>Nirusha</h3>
+                        <p>Everything he does seems like making impssible things possible. He is my hero and I'm his greatest fan to ever exist!</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form >
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="name">
+                <input type="email" placeholder="Email Address" name="email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" name="number">
+                <input type="text" placeholder="Email Subject" name="subject">
+            </div>
+            <textarea  id="" cols="30" rows="10" placeholder="Your Message" name="text"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
