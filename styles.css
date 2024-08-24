@@ -6,7 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: #111;
     font-family: Arial, sans-serif;
 }
 
@@ -16,25 +16,43 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #fff;
+    background-color: #111;
 }
 
-.spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid rgba(0, 0, 0, 0.1);
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+.glow-text {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 
+        0 0 5px #ffffff, 
+        0 0 10px #ffffff, 
+        0 0 20px #00ff00, 
+        0 0 30px #00ff00, 
+        0 0 40px #00ff00, 
+        0 0 50px #00ff00, 
+        0 0 60px #00ff00;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.loading-screen p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+@keyframes glow {
+    from {
+        text-shadow: 
+            0 0 5px #ffffff, 
+            0 0 10px #ffffff, 
+            0 0 20px #00ff00, 
+            0 0 30px #00ff00, 
+            0 0 40px #00ff00, 
+            0 0 50px #00ff00, 
+            0 0 60px #00ff00;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #ffffff, 
+            0 0 20px #ffffff, 
+            0 0 30px #00ff00, 
+            0 0 40px #00ff00, 
+            0 0 50px #00ff00, 
+            0 0 60px #00ff00, 
+            0 0 70px #00ff00;
+    }
 }
