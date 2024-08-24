@@ -79,3 +79,11 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+window.addEventListener("load", function() {
+    const loadingScreen = document.querySelector(".loading-screen");
+    const content = document.getElementById("content");
+
+    loadingScreen.style.display = "none";
+    content.style.display = "block";
+});
