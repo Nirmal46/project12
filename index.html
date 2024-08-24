@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PHP Page</title>
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-        
-    <h1>Nirmal is on vacation! ;)</h1>
-    </center>
-    
-   
+    <div class="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div id="content" style="display: none;">
+        <!-- Your website content goes here -->
+        <h1>Welcome to My Website</h1>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
