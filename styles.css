@@ -52,3 +52,11 @@ img{
     border-radius: 100px;
 
 }
+h4{
+    color: yellow;
+    text-align: right;
+}
+h3{
+    text-align: center;
+    color: greenyellow;
+}
