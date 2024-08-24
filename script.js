@@ -87,3 +87,4 @@ window.addEventListener("load", function() {
     loadingScreen.style.display = "none";
     content.style.display = "block";
 });
+
