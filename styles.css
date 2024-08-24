@@ -8,51 +8,47 @@ body, html {
     align-items: center;
     background-color: #111;
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 .loading-screen {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #111;
+    position: relative;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
 }
 
-.glow-text {
-    font-size: 48px;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 
-        0 0 5px #ffffff, 
-        0 0 10px #ffffff, 
-        0 0 20px #00ff00, 
-        0 0 30px #00ff00, 
-        0 0 40px #00ff00, 
-        0 0 50px #00ff00, 
-        0 0 60px #00ff00;
-    animation: glow 1.5s ease-in-out infinite alternate;
+.logo-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s infinite linear;
+    border: solid 5px;
+    border-color: aqua;
+    border-radius: 70px;
+
 }
 
-@keyframes glow {
-    from {
-        text-shadow: 
-            0 0 5px #ffffff, 
-            0 0 10px #ffffff, 
-            0 0 20px #00ff00, 
-            0 0 30px #00ff00, 
-            0 0 40px #00ff00, 
-            0 0 50px #00ff00, 
-            0 0 60px #00ff00;
+.logo {
+    width: 100%; /* Adjust this to fit your logo size */
+    height: auto;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
     }
-    to {
-        text-shadow: 
-            0 0 10px #ffffff, 
-            0 0 20px #ffffff, 
-            0 0 30px #00ff00, 
-            0 0 40px #00ff00, 
-            0 0 50px #00ff00, 
-            0 0 60px #00ff00, 
-            0 0 70px #00ff00;
+    100% {
+        transform: rotate(360deg);
     }
+}
+img{
+    border-radius: 100px;
+
 }
